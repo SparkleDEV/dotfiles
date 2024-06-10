@@ -66,20 +66,6 @@
 			"type": "custom",
 			"format": "└────────────────────────────────────────────┘"
 		}
-		//- "break",
-		//- "title",
-		//- "separator",
-		//- "os",
-		//- "kernel",
-		// "uptime",
-		//- "packages",
-		//- "shell",
-		//- "de",
-		//- "terminal",
-		//- "cpu",
-		//- "gpu",
-		//- "memory",
-		// "swap"
 	],
 	"display": {
 		"color": {
