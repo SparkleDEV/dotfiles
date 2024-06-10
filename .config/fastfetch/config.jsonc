@@ -1,0 +1,101 @@
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"modules": [
+		"break",
+		{
+			"type": "title",
+			"format": "{6} on {8}"
+		},
+		{
+			"type": "custom",
+			"format": "┌────────────── {#1}✨ Software ✨{#} ──────────────┐"
+		},
+		{
+			"type": "os",
+			"key": "  \udb82\udcc7 OS      "
+		},
+		{
+			"type": "kernel",
+			"key": "  \ue712 Kernel  "
+		},
+		{
+			"type": "packages",
+			"key": "  \uf1b2 Packages"
+		},
+		{
+			"type": "terminal",
+			"key": "  \uf489 Terminal"
+		},
+		{
+			"type": "shell",
+			"key": "  \uf4df Shell   "
+		},
+		{
+			"type": "de",
+			"key": "  \udb86\udc76 DE      "
+		},
+		{
+			"type": "custom",
+			"format": "└────────────────────────────────────────────┘"
+		},
+		{
+			"type": "custom",
+			"format": "┌────────────── {#1}✨ Hardware ✨{#} ──────────────┐"
+		},
+		{
+			"type": "cpu",
+			"key": "  \uf4bc CPU   ",
+			"format": "{1}"
+		},
+		{
+			"type": "gpu",
+			"key": "  \udb81\ude1a GPU   ",
+			"format": "{1} {2}"
+		},
+		{
+			"type": "memory",
+			"key": "  \udb80\udf5b Memory",
+			"format": "{2}"
+		},
+		{
+			"type": "swap",
+			"key": "  \udb81\udce1 Swap  ",
+			"format": "{2}"
+		},
+		{
+			"type": "custom",
+			"format": "└────────────────────────────────────────────┘"
+		}
+		//- "break",
+		//- "title",
+		//- "separator",
+		//- "os",
+		//- "kernel",
+		// "uptime",
+		//- "packages",
+		//- "shell",
+		//- "de",
+		//- "terminal",
+		//- "cpu",
+		//- "gpu",
+		//- "memory",
+		// "swap"
+	],
+	"display": {
+		"color": {
+			"keys": "light_magenta",
+			"separator": "light_magenta",
+			"title": "light_magenta"
+		},
+		"separator": " \uf061 "
+	},
+	"logo": {
+		"source": "~/.config/fastfetch/logo.png",
+		"width": 30,
+		"padding": {
+			"left": 2,
+			"right": 2,
+			"top": 1
+		}
+	}
+}

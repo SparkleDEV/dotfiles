@@ -11,6 +11,6 @@ compinit
 # End of lines added by compinstall
 
 eval "$(oh-my-posh init zsh)"
-alias ll="ls -l"
+alias ll="ls -lah"
 alias burn-orphanage="pacman -Qqtd | sudo pacman -Rsu -"
 fastfetch
