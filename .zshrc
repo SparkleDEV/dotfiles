@@ -13,4 +13,5 @@ compinit
 eval "$(oh-my-posh init zsh)"
 alias ll="ls -lah"
 alias burn-orphanage="pacman -Qqtd | sudo pacman -Rsu -"
-fastfetch --logo-padding-top 2
+alias fulltree="tree -I \".git\" -a ."
+pokeget $(shuf -i 1-721 -n 1) --hide-name
