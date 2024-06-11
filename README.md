@@ -16,3 +16,11 @@ _This is mainly for the case that I forget how stow works_
    - A way around this is changing the command to run `stow --adopt .`, although this will override all the files in the `.dotfiles` directory, so be sure to rollback using `git restore .` after this step.
 
 [Here's the tutorial for that in case I'm stoopid and still can't manage to set this up (which will most likely happen)](https://www.youtube.com/watch?v=y6XCebnB9gs)
+
+## Managed programs
+
+**!! THIS LIST MIGHT NOT BE COMPLETE AS I AM TOO LAZY TO MANAGE !!**
+
+1. kitty
+2. zsh
+3. fastfetch

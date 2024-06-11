@@ -13,4 +13,4 @@ compinit
 eval "$(oh-my-posh init zsh)"
 alias ll="ls -lah"
 alias burn-orphanage="pacman -Qqtd | sudo pacman -Rsu -"
-fastfetch
+fastfetch --logo-padding-top 2
