@@ -88,7 +88,7 @@
 	"transient_prompt": {
 		"background": "transparent",
 		"foreground": "#ffffff",
-		"template": "{{ if gt .Code 0 }}<#ff0000>λ</> {{ else }}<#00ff00>λ</> {{ end }} {{ .Shell }} > "
+		"template": "{{ if gt .Code 0 }}<#ff0000>λ</> {{ else }}<#00ff00>λ</> {{ end }} "
 	},
 	"console_title_template": "{{ .Shell }} in {{.Folder | replace \"~\" \"🏚\" }}",
 	"version": 2
