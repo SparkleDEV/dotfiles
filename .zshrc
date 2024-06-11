@@ -10,7 +10,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-eval "$(oh-my-posh init zsh)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/vivi.json)"
 alias ll="ls -lah"
 alias burn-orphanage="pacman -Qqtd | sudo pacman -Rsu -"
 alias fulltree="tree -I \".git\" -a ."
