@@ -62,7 +62,7 @@
 					"foreground": "#ffffff",
 					"powerline_symbol": "\ue0b0",
 					"style": "powerline",
-					"template": "<transparent> \uf12a</> {{ reason .Code }} ",
+					"template": " {{ reason .Code }} ",
 					"type": "status"
 				}
 			],
@@ -88,7 +88,7 @@
 	"transient_prompt": {
 		"background": "transparent",
 		"foreground": "#ffffff",
-		"template": "{{ if gt .Code 0 }}<#ff0000>λ</> {{ else }}<#00ff00>λ</> {{ end }} "
+		"template": "{{ if gt .Code 0 }}<#ff0000>λ</> {{ else }}<#00ff00>λ</> {{ end }} {{ .Shell }} > "
 	},
 	"console_title_template": "{{ .Shell }} in {{.Folder | replace \"~\" \"🏚\" }}",
 	"version": 2
