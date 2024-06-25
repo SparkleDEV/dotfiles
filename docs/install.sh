@@ -46,7 +46,7 @@ EOF
 
 sudo -v
 
-if ! [ -x "${command -v yay}" ]; then
+if ! command -v yay &> /dev/null; then
 	echo "yay was not found on system, installing..."
 	TEMP_DIR=`mktemp -d`
 
