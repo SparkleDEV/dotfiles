@@ -16,7 +16,7 @@ case "$c_execute" in
 		;;
 esac
 
-DOTFILES_DIR=$HOME/dotfiles
+DOTFILES_DIR=$HOME/.dotfiles
 
 if [ -d "$DOTFILES_DIR" ]; then
 	read -p "$DOTFILES_DIR already exists, do you want to override it? (y/N) " choice
