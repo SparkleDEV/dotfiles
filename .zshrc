@@ -15,6 +15,9 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/vivi.json)"
 alias ll="ls -lh"
 alias burn-orphanage="pacman -Qqtd | sudo pacman -Rsu -"
 alias fulltree="tree -I \".git\" -a ."
+
+alias update-mirrorlist="$HOME/.scripts/update-mirrorlist.sh"
+
 alias "cd.."="cd .."
 
 pokeget $(shuf -i 1-721 -n 1) --hide-name

@@ -39,7 +39,7 @@ sudo -v
 sudo bash <<EOF
 	echo "Installing packages"
 	pacman -Syy
-	pacman -S zsh kitty fastfetch tree git stow nerd-fonts --noconfirm --needed
+	pacman -S zsh kitty fastfetch tree git stow nerd-fonts reflector --noconfirm --needed
 	echo "Setting user shell to zsh"
 	chsh -s /bin/zsh $USER
 EOF
@@ -61,8 +61,12 @@ sudo -v
 echo "Installing AUR packages"
 yay -S pokeget oh-my-posh --noconfirm --needed
 
+sudo -v
+
 echo "Downloading dotfiles"
 git clone https://github.com/SparkleDEV/dotfiles.git $DOTFILES_DIR
+
+sudo chmod +x $DOTFILES_DIR/.scripts/*
 
 cd $DOTFILES_DIR
 
