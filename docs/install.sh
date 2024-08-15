@@ -39,7 +39,7 @@ sudo -v
 sudo bash <<EOF
 	echo "Installing packages"
 	pacman -Syy
-	pacman -S zsh kitty fastfetch nodejs tree git stow nerd-fonts reflector --noconfirm --needed
+	pacman -S zsh fastfetch nodejs tree git stow nerd-fonts reflector --noconfirm --needed
 	echo "Setting user shell to zsh"
 	chsh -s /bin/zsh $USER
 EOF

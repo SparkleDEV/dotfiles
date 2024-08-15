@@ -78,8 +78,8 @@
 			"title": "light_magenta"
 		},
 		"separator": " \uf061 "
-	},
-	"logo": {
+	}
+	/*"logo": {
 		"source": "~/.config/fastfetch/logo.png",
 		"width": 30,
 		"padding": {
@@ -87,5 +87,5 @@
 			"right": 2,
 			"top": 1
 		}
-	}
+	}*/
 }
