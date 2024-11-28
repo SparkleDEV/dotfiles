@@ -39,9 +39,9 @@ sudo -v
 sudo bash <<EOF
 	echo "Installing packages"
 	pacman -Syy
-	pacman -S zsh fastfetch nodejs tree git stow nerd-fonts reflector --noconfirm --needed
-	echo "Setting user shell to zsh"
-	chsh -s /bin/zsh $USER
+	pacman -S vim fish fastfetch hyfetch nodejs tree git stow nerd-fonts reflector --noconfirm --needed
+	echo "Setting user shell to fish"
+	chsh -s /bin/fish $USER
 EOF
 
 sudo -v
@@ -59,7 +59,7 @@ fi
 sudo -v
 
 echo "Installing AUR packages"
-yay -S arrpc okeget oh-my-posh --noconfirm --needed
+yay -S arrpc pokeget oh-my-posh --noconfirm --needed
 
 sudo -v
 

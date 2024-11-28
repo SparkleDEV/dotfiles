@@ -79,13 +79,13 @@
 		},
 		"separator": " \uf061 "
 	}
-	/*"logo": {
-		"source": "~/.config/fastfetch/logo.png",
-		"width": 30,
-		"padding": {
-			"left": 2,
-			"right": 2,
-			"top": 1
-		}
-	}*/
+	// "logo": {
+	//   "source": "~/.config/fastfetch/logo.png",
+	//   "width": 30,
+	//   "padding": {
+	//     "left": 2,
+	//     "right": 2,
+	//     "top": 1,
+	//   },
+	// },
 }
