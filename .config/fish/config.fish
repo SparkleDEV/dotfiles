@@ -14,7 +14,6 @@ alias fulltree="tree -I \".git\" -a ."
 alias burn-orphanage="pacman -Qqtd | sudo pacman -Rsu -"
 
 alias cd..="cd .."
-alias fuck="sudo !!"
 alias girlboss="sudo"
 
 alias vifish="vim $HOME/.config/fish/config.fish"
