@@ -76,6 +76,7 @@ git restore .
 
 echo "Installing SDDM theme"
 sudo mkdir -p /etc/sddm.conf.d
-ln -sf $DOTFILES_DIR/manual/sddm.theme.conf /etc/sddm.conf.d/theme.conf
+sudo ln -sf $DOTFILES_DIR/manual/sddm.theme.conf /etc/sddm.conf.d/theme.conf
+echo "SDDM configured, although it needs to be enabled manually"
 
 echo "Dotfile installation successfully completed"
