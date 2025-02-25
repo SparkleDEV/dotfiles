@@ -5,7 +5,8 @@
 	"modules-right": ["tray", "network", "pulseaudio", "battery", "clock"],
 	"clock": {
 		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"on-click": "gnome-calendar"
 	},
 	"battery": {
 		"states": {
@@ -32,7 +33,7 @@
 	},
 	"pulseaudio": {
 		"format": "{icon}  {volume}%",
-		"format-muted": "",
+		"format-muted": "\uf6a9 Mute",
 		"format-icons": {
 			"default": ["", "", ""]
 		},

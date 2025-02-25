@@ -19,6 +19,7 @@ esac
 
 DOTFILES_DIR=$HOME/.dotfiles
 
+
 if [ -d "$DOTFILES_DIR" ]; then
     read -p "$DOTFILES_DIR already exists, do you want to override it? (y/N) " choice
     choice=${choice:-N}
@@ -36,6 +37,8 @@ if [ -d "$DOTFILES_DIR" ]; then
 fi
 
 sudo -v
+
+sudo pacman -S base-devel git
 
 if ! command -v yay &> /dev/null; then
     echo "yay was not found on system, installing..."
@@ -55,7 +58,7 @@ yay -S vim fish fastfetch hyfetch nodejs tree git stow nerd-fonts reflector arrp
 sudo -v
 
 echo "Setting user shell to fish"
-chsh -s /bin/fish $USER
+sudo chsh -s /bin/fish $USER
 
 echo "arrpc systemd fix..."
 
