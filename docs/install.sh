@@ -53,7 +53,7 @@ fi
 sudo -v
 
 echo "Installing AUR packages"
-yay -S vim fish fastfetch hyfetch nodejs tree git stow nerd-fonts reflector arrpc pokeget oh-my-posh hyprland hyprshot hyprlock hyprpaper hypridle brightnessctl playerctl pavucontrol nm-connection-editor uswm sddm waybar ttf-font-awesome swaync libnotify kitty wofi nautilus --noconfirm --needed
+yay -S vim fish fastfetch hyfetch nodejs tree git stow nerd-fonts reflector arrpc pokeget oh-my-posh hyprland hyprshot hyprlock hyprpaper hypridle brightnessctl playerctl pavucontrol nm-connection-editor uswm sddm waybar ttf-font-awesome swaync libnotify kitty wofi nautilus sddm-theme-corners-git --noconfirm --needed
 
 sudo -v
 
@@ -68,12 +68,14 @@ sudo systemctl enable arrpc --now
 echo "Downloading dotfiles"
 git clone https://github.com/SparkleDEV/dotfiles.git $DOTFILES_DIR
 
-sudo chmod +x $DOTFILES_DIR/.scripts/*
-
 cd $DOTFILES_DIR
 
 echo "Installing dotfiles"
 stow --adopt .
 git restore .
+
+echo "Installing SDDM theme"
+sudo mkdir -p /etc/sddm.conf.d
+ln -sf $DOTFILES_DIR/manual/sddm.theme.conf /etc/sddm.conf.d/theme.conf
 
 echo "Dotfile installation successfully completed"
