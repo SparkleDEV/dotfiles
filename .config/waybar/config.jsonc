@@ -2,11 +2,15 @@
 	"position": "top",
 	"modules-left": ["hyprland/workspaces"],
 	"modules-center": ["hyprland/window"],
-	"modules-right": ["tray", "network", "pulseaudio", "battery", "clock"],
+	"modules-right": ["tray", "network", "pulseaudio", "battery", "clock", "custom/swaync"],
 	"clock": {
 		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"on-click": "gnome-calendar"
+	},
+	"custom/swaync": {
+		"format": "<span size='13000' foreground='#a6e3a1'>\uf0f3</span>",
+		"on-click": "swaync-client -t"
 	},
 	"battery": {
 		"states": {
