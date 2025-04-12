@@ -115,8 +115,9 @@ button:hover {
 	color: @text;
 }
 
-#custom-swaync {
-	margin-right: 8px;
+#custom-swaync,
+#custom-logout {
+	margin-right: 16px;
 }
 
 /* If workspaces is the leftmost module, omit left margin */

@@ -52,8 +52,8 @@ fi
 
 sudo -v
 
-echo "Installing AUR packages"
-yay -S vim fish fastfetch hyfetch nodejs tree git stow nerd-fonts reflector arrpc pokeget oh-my-posh hyprland hyprshot hyprlock hyprpaper hypridle brightnessctl playerctl pavucontrol nm-connection-editor uswm sddm waybar ttf-font-awesome swaync libnotify kitty wofi nautilus sddm-theme-corners-git --noconfirm --needed
+echo "Installing yay packages"
+yay -S vim fish fastfetch hyfetch nodejs tree git stow nerd-fonts reflector arrpc pokeget oh-my-posh hyprland hyprshot hyprlock hyprpaper hypridle brightnessctl playerctl pavucontrol nm-connection-editor uswm sddm waybar ttf-font-awesome swaync libnotify kitty wofi nautilus sddm-theme-corners-git wlogout --noconfirm --needed
 
 sudo -v
 
